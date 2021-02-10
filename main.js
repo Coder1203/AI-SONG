@@ -73,6 +73,20 @@ function draw() {
 			song1.play();
 			document.getElementById("song").innerHTML = "Playing - Harry Potter Theme Song"
 		}
+		
+		if(scoreLeftWrist > 0.2)
+	{
+		circle(leftWristX,leftWristY,20);
+
+			song1.stop();
+
+		if(song2_status == false)
+		{
+			song2.play();
+			document.getElementById("song").innerHTML = "Playing - Peter Pan Song"
+		}
+	}
+
 	}
 }
 
